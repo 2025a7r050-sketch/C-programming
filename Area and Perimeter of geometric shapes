@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+    int main() {
+    float r, a, l, b;
+    float circle_area, circle_peri;
+    float square_area, square_peri;
+    float rect_area, rect_peri;
+
+    
+    scanf("%f", &r);        
+    scanf("%f", &a);        
+    scanf("%f %f", &l, &b); 
+
+
+    circle_area = 3.1416 * r * r;
+    circle_peri = 2 * 3.1416 * r;
+
+    
+    square_area = a * a;
+    square_peri = 4 * a;
+
+    
+    rect_area = l * b;
+    rect_peri = 2 * (l + b);
+
+    
+    printf("Circle: %.2f %.2f\n", circle_area, circle_peri);
+    printf("Square: %.2f %.2f\n", square_area, square_peri);
+    printf("Rectangle: %.2f %.2f\n", rect_area, rect_peri);
+
+    return 0;
+} 
